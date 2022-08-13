@@ -1,0 +1,259 @@
+body {
+    background-color: #F8E9F2;
+}
+
+.logo {
+    position: absolute;
+    width: 119.09px;
+    height: 48px;
+    bottom: 92%;
+}
+
+.texto-encriptador{
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #710A45;
+
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+
+#textarealenght {
+    height: 80%;
+    width: 40%;
+    /*borde transparente*/
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 28px;
+    background-color: #FCF3FA;
+    resize: none;
+
+}
+
+textarea::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #710A45;
+  }
+
+.informacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 300px;
+    height: 18px;
+    left: 250px;
+    top: 850px;
+    
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #c78aac;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+
+}
+
+#boton-encriptar{  
+
+    padding: 24px;
+    
+    width: 328px;
+    height: Hug(67px);
+    top: 885px;
+    left: 240px;
+    gap: 24px;
+    background: #710A45;
+    border: 1px solid #710A45;
+    border-radius: 24px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#boton-desencriptar{
+    
+
+    box-sizing: border-box;
+
+    padding: 24px;
+    gap: 24px;
+
+    width: 328px;
+    height: 67px;
+    top: 885px;
+    left: 240px;
+    background: #E8D8E3;
+    border: 1px solid #710A45;
+    border-radius: 24px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #710A45; 
+
+}
+
+.rectangulo {
+    position: relative;
+    width: 400px;
+    height: 900px;
+    left: 1000px;
+    top: 40px;
+
+    text-align: center;
+    background: #FFFFFF;
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.muneco{
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+    height: auto;
+    display: inline-block;  
+}
+
+
+.nomensaje1 {
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    width: 336px;
+    height: 58px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    color: #40343A;
+}
+
+.nomensaje2{
+    position: absolute;
+    bottom: 35%;
+    left: 10%;
+    width: 336px;
+    height: 48px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #57494F;
+}
+
+.textomostrado {
+    padding-top: 15%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+
+    color: #57494F;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+#boton-copiar {
+    box-sizing: border-box;
+
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 328px;
+    height: 67px;
+    top: 785px;
+    left: 40px;
+    background: transparent;
+    border: 1px solid #710A45;
+    border-radius: 24px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #710A45; 
+
+}
+
+.footer{
+    padding: 60px 0 30px 0;
+    text-align: center;
+    clear: both;
+    bottom: 0;
+    background-color: #E8D8E3;
+}
+
+.datosdev{
+    font-family: 'inter', sans-serif;
+}
+
+img.alineadoTextoImagenCentro{
+    vertical-align: middle;
+}
+
+.github {
+    color: #710A45; 
+    text-decoration: none;
+}

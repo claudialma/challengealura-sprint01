@@ -1,0 +1,100 @@
+<meta charset="utf-8">
+
+<input/>
+
+<button onclick="encriptar()">Encriptar</button>
+<button onclick="desencriptar()">Desencriptar</button>
+<button id="btn" onclick="copyToClickBoard()">Copiar texto</button>
+<p id="inputvalue"></p>
+
+<script>
+
+	var input = document.querySelector("input");
+	input.focus();
+
+
+
+	function encriptar(){
+
+		var texto = input.value;
+		var nuevo = []
+
+		for (var posicion = 0; posicion < texto.length; posicion++){
+			if (texto[posicion] == "a") {
+
+				nuevo[posicion] = "ai"; 
+			}else{
+
+				if ((texto[posicion]) == "e") {
+
+					nuevo[posicion] = "enter"; 
+
+				}else{
+					if ((texto[posicion]) == "i") {
+
+						nuevo[posicion] = "imes"; 
+
+					}else{
+						if ((texto[posicion]) == "o") {
+
+							nuevo[posicion] = "ober"; 
+
+						}else{
+							if ((texto[posicion]) == "u") {
+
+								nuevo[posicion] = "ufat"; 
+
+							}else{
+								nuevo[posicion] = texto[posicion]; 						
+							}							
+						}
+					}
+				}
+			}
+		}
+
+	var nuevostr = nuevo.join('');
+	console.log(nuevostr);
+	document.getElementById("inputvalue").innerHTML = nuevostr;
+	input.value = "";
+    input.focus();
+	}
+	     
+
+	function desencriptar(){
+		
+		var texto = input.value;
+
+		do{
+
+			var texto = texto.replace("ai", "a");
+			var texto = texto.replace("enter", "e");
+			var texto = texto.replace("imes", "i");
+			var texto = texto.replace("ober", "o");
+			var texto = texto.replace("ufat", "u");
+
+		} while(texto.includes("ai")||texto.includes("enter")||texto.includes("imes")||texto.includes("ober")||texto.includes("ufat"));
+
+	document.getElementById("inputvalue").innerHTML = texto;
+	input.value = "";
+    input.focus(); 
+	}
+
+	function copyToClickBoard(){
+    	var copiar = document.getElementById('inputvalue').innerHTML;
+
+	    navigator.clipboard.writeText(copiar)
+	    .then(() => {
+        console.log("Texto copiado");
+        alert("Texto copiado");
+    })
+        .catch(err => {
+        console.log('Algo está mal', err);
+        alert("Algo está mal");
+    })
+ 
+	}
+
+
+
+</script>
